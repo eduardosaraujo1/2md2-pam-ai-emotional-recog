@@ -51,7 +51,7 @@ const userUUID = getOrCreateUUID();
 
 // Inicializar o WebSocket com o UUID persistente
 const backendPath = '2md2-pam-emotion-recog-backend-production.up.railway.app';
-const socketUrl = `ws://${backendPath}?token=${userUUID}`;
+const socketUrl = `wss://${backendPath}?token=${userUUID}`;
 
 // Função para traduzir cores
 function traduzirCor(cor) {
