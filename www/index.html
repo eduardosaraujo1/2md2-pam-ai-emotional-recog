@@ -14,17 +14,28 @@
         <script src="./js/app.js" defer></script>
     </head>
     <body>
-        <div id="output">
-            <img src="" alt="Image" />
+        <div class="container">
+            <div class="camera-square" style="--border-color: #000000">
+                <img class="preview" src="" alt="Carregando..." />
+            </div>
+            <div class="analysis-data">
+                <div class="verdict">
+                    <b>Resultado</b> <br />
+                    <span class="result" id="verdict">Triste</span>
+                    <span class="result" id="percent"></span>
+                </div>
+                <br />
+                <div class="scores">
+                    <b>Dados</b><br />
+                    <span>Tristeza:</span><span class="result" id="sad"></span><br />
+                    <span>Alegria:</span><span class="result" id="happy"></span><br />
+                    <span>Raiva:</span><span class="result" id="angry"></span><br />
+                    <span>Surpresa:</span><span class="result" id="surprise"></span><br />
+                    <span>Medo:</span><span class="result" id="fear"></span><br />
+                    <span>Nojo:</span><span class="result" id="disgust"></span><br />
+                    <span>Neutro:</span><span class="result" id="neutral"></span>
+                </div>
+            </div>
         </div>
-        <!-- 
-        1. IA reconhecimento ao vivo
-        2. Backend envio de histórico
-        3. Refazer em React/Tailwind para prática
-
-        // Plugins
-        Camera: tira fotos e permite usuário escolher imagem pra enviar 
-        Capture: Usa a camera e microfone do celular sem abrir o menu de gravação de vídeo (por exemplo, pra um app de espelho ou IA que detecta emoção)
-        Notification: envia notificações (opcionalmente criar um sistema de notificações)
-    --></body>
+    </body>
 </html>
